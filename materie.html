@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Sito dell'anno</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stile.css">
+  <link rel="icon" type="image/x-icon" href="brand.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark">
+
+
+  <nav class="navbar custom-navbar">
+    <div class="d-flex align-items-center ps-3">
+  
+      <!-- Logo -->
+      <img src="berserkpfp.png" alt="Logo" class="rounded-pill me-3" style="width:60px; height:60px;">
+  
+      <!-- Titolo + link affiancati al logo -->
+      <div class="d-flex align-items-center gap-4 flex-wrap">
+        <span class="titoloHeader">Leonardo Fico 5AM</span>
+        <a class="nav-link titoloHeader" href="home.html">Home</a>
+        <a class="nav-link titoloHeader" href="hobby.html">Hobby</a>
+
+        <a class="nav-link titoloHeader" href="pcto.html">Esperienza PCTO</a>
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle titoloHeader" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Materie</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="materie.html?materia=storia">Storia</a></li>
+            <li><a class="dropdown-item" href="materie.html?materia=italiano">Italiano</a></li>
+            <li><a class="dropdown-item" href="materie.html?materia=sistemi">Sistemi e Reti</a></li>
+            <li><a class="dropdown-item" href="materie.html?materia=informatica">Informatica</a></li>
+          </ul>
+        </div>          
+      </div>
+  
+    </div>
+  </nav>
+   <!-- CONTENUTO PAGINA -->
+   <div class="container mt-5">
+      <!-- Sezione Storia -->
+      <div class="container mb-5 materia" id="storia">
+        <h2 class="text-white" align="center">Prima guerra mondiale</h2>
+        <div class="row">
+          <div class="col">
+            <h6 class="text-white">
+              La prima guerra mondiale scoppia nel 28 giugno 1914 a causa dell'assassinio<br>
+              dell'arciduca d'Austria e coinvolge molti stati in tutto il mondo.<br>
+              In questo conflitto si distinguono due fazioni:<br>
+              -La triplice Alleanza : Austria, Germania e Italia.<br>
+              -La triplice Intesa : Francia, Gran Bretagna e Russia.<br>
+              La Germania attacca la Francia passando dai confini degli stati neutrali, prendendola alla sprovvista.<br>
+              La guerra all'inizio si prospetta essere una guerra lampo, ma dopo le prime settimane le truppe francesi riesconno a fermare l'avanzata tedesca e i generali capiscono che la guerra sta diventando di posizione.<br>
+              L'Italia si dichiara neutrale grazie alle caratteristiche difensive della triplice Alleanza, entra in guerra successivamente (nel 1915) schierata con la triplice intesa grazie al patto segreto di Londra che avrebbe ridato all'Italia svariati territori che erano in mano degli Austriaci.<br>
+              La Germania attua una guerra sottomarina indiscriminata contro la flotta dell'Inghilterra, questa è anche una delle ragioni per cui in seguito L'America entra a far parte del conflitto.<br>
+              L'Italia ottiene scarsi risultati e il generale dell'esercito Cadorna viene sostituito da Diaz, che riesce a rinvigorire il morale delle truppe, ferma l'avanzata Austriaca e costrinse l'Austria a firmare l'armistizio nel 1918.<br>
+              Dopo poco tempo la Russia è costretta a ritirarsi dal conflitto a causa della caduta dello Zar.<br>
+              L'entrata in guerra dell'America nel 1917 determina la sconfitta della triplice Alleanza e la fine della grande guerra.<br>
+              </h6>
+          </div>
+          <div class="col">
+            <figure>
+            <img src="trincea.jpg" class="img-fluid mx-auto d-block rounded shadow">
+            <figcaption class="text-light">soldati che combattono nelle trincee, simbolo della grande guerra</figcaption>
+            </figure>
+          </div>
+        </div>
+        <br>
+        <h2 class="text-white" align="center">Seconda guerra mondiale</h2>
+        <div class="row">
+          <div class="col">
+            <figure>
+            <img src="seconda_guerra_mondiale.jpg" class="img-fluid mx-auto d-block rounded shadow">
+            <figcaption class="text-white">soldati dell'armata rossa che liberano forze occupate dall'asse</figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <h6 class="text-white">
+              La seconda guerra mondiale è il conflitto più grande del mondo, questa comincia nel 1939, quando Hitler invade la Polonia senza una dichiarazione di guerra.<br>
+              Nel 1940 Hitler riesce a raggirare le difese francesi e conquista la Francia.<br>
+              La Gran Bretagna riesce a difendersi dai continui attacchi della Luftwaffe e respinge l'avanzata di Hitler.<br>
+              Nel 1940 l'Italia entra in guerra dopo un discorso di Mussolini.<br>
+              Nel 1941 la Germania invade la Russia<br>
+              Gli alleati sono formati da: Francia, Gran Bretagna e America.<br>
+              L'asse è formata da: Germania, Italia e Giappone.<br>
+              Hitler dal 41 comincia la "soluzione finale", ovvero lo sterminio degli ebrei nei campi di concentramento, dove muoiono più di 6 milioni di ebrei.<br>
+              Comincia anche l'operazione barbarossa, dove i tedeschi invadono la Russia che era impreparata, quindi le forze tedesche riescono a guadagnare molto territorio in poco tempo, ma vengono fermati prima di arrivare a Mosca.<br>
+            </h6>
+          </div>
+      </div>
+
+      <!-- Sezione Italiano -->
+      <div class="text-center mb-5 materia" id="italiano">
+        <h2 class="text-white mb-3">Giovanni Verga</h2>
+        <img src="verga.jpg" class="img-fluid mx-auto d-block rounded shadow" alt="Giovanni Verga">
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
