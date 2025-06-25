@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const carouselElement = document.getElementById('carouselExample');
 
   if (offcanvasElement && carouselElement) {
-    offcanvasElement.addEventListener('show.bs.offcanvas', function () {
-      carouselElement.style.display = 'none';
-    });
+      offcanvasElement.addEventListener('show.bs.offcanvas', function () {
+          carouselElement.style.display = 'none';
+      });
 
-    offcanvasElement.addEventListener('hidden.bs.offcanvas', function () {
-      carouselElement.style.display = 'block';
-    });
+      offcanvasElement.addEventListener('hidden.bs.offcanvas', function () {
+          carouselElement.style.display = 'block';
+      });
   }
 
   // Gestione visualizzazione sezioni materie
@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const materia = params.get('materia');
 
   if (materia) {
-    mostraMateria(materia);
+      mostraMateria(materia);
   } else {
-    const tutte = document.querySelectorAll('.materia');
-    tutte.forEach(div => div.style.display = 'block');
+      const tutte = document.querySelectorAll('.materia');
+      tutte.forEach(div => div.style.display = 'block');
   }
 });
 
@@ -29,10 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
 function mostraMateria(materiaId) {
   const tutte = document.querySelectorAll('.materia');
   tutte.forEach(div => {
-    if (div.id === materiaId) {
-      div.style.display = 'block';
-    } else {
-      div.style.display = 'none';
-    }
+      if (div.id === materiaId) {
+          div.style.display = 'block';
+      } else {
+          div.style.display = 'none';
+      }
   });
 }
